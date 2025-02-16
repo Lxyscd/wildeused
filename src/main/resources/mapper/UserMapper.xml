@@ -1,75 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
->>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xy.mianshiya.mapper.UserMapper">
-<<<<<<< HEAD
 
     <resultMap id="BaseResultMap" type="com.xy.mianshiya.model.entity.User">
         <id property="id" column="id" jdbcType="BIGINT"/>
         <result property="userAccount" column="userAccount" jdbcType="VARCHAR"/>
         <result property="userPassword" column="userPassword" jdbcType="VARCHAR"/>
-=======
-<<<<<<< HEAD
-
-    <resultMap id="BaseResultMap" type="com.xy.mianshiya.model.entity.User">
-        <id property="id" column="id" />
-        <result property="userAccount" column="userAccount" />
-        <result property="userPassword" column="userPassword" />
-        <result property="unionId" column="unionId" />
-        <result property="mpOpenId" column="mpOpenId" />
-        <result property="userName" column="userName" />
-        <result property="userAvatar" column="userAvatar" />
-        <result property="userProfile" column="userProfile" />
-        <result property="userRole" column="userRole" />
-        <result property="editTime" column="editTime" />
-        <result property="createTime" column="createTime" />
-        <result property="updateTime" column="updateTime" />
-        <result property="isDelete" column="isDelete" />
-    </resultMap>
-
-    <sql id="Base_Column_List">
-        id,userAccount,userPassword,unionId,mpOpenId,userName,
-        userAvatar,userProfile,userRole,editTime,createTime,
-        updateTime,isDelete
-=======
-    <resultMap id="BaseResultMap" type="com.xy.mianshiya.model.entity.User">
-        <id property="id" column="id" jdbcType="BIGINT"/>
->>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
         <result property="unionId" column="unionId" jdbcType="VARCHAR"/>
         <result property="mpOpenId" column="mpOpenId" jdbcType="VARCHAR"/>
         <result property="userName" column="userName" jdbcType="VARCHAR"/>
         <result property="userAvatar" column="userAvatar" jdbcType="VARCHAR"/>
         <result property="userProfile" column="userProfile" jdbcType="VARCHAR"/>
         <result property="userRole" column="userRole" jdbcType="VARCHAR"/>
-<<<<<<< HEAD
         <result property="editTime" column="editTime" jdbcType="TIMESTAMP"/>
-=======
->>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
         <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
         <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
         <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-<<<<<<< HEAD
         id,userAccount,userPassword,
         unionId,mpOpenId,userName,
         userAvatar,userProfile,userRole,
         editTime,createTime,updateTime,
         isDelete
-=======
-        id,unionId,mpOpenId,
-        userName,userAvatar,userProfile,
-        userRole,createTime,updateTime,isDelete
->>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
->>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
     </sql>
 </mapper>
