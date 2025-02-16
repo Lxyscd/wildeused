@@ -8,7 +8,11 @@ import com.xy.mianshiya.model.entity.User;
  *
  
  */
+<<<<<<< HEAD
 public interface    UserMapper extends BaseMapper<User> {
+=======
+public interface UserMapper extends BaseMapper<User> {
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
 
 }
 

@@ -6,9 +6,13 @@ import cn.hutool.core.collection.CollUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xy.mianshiya.common.ErrorCode;
+<<<<<<< HEAD
 import com.xy.mianshiya.config.RedissonConfig;
 import com.xy.mianshiya.constant.CommonConstant;
 import com.xy.mianshiya.constant.RedisConstant;
+=======
+import com.xy.mianshiya.constant.CommonConstant;
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
 import com.xy.mianshiya.exception.BusinessException;
 import com.xy.mianshiya.mapper.UserMapper;
 import com.xy.mianshiya.model.dto.user.UserQueryRequest;
@@ -18,18 +22,27 @@ import com.xy.mianshiya.model.vo.LoginUserVO;
 import com.xy.mianshiya.model.vo.UserVO;
 import com.xy.mianshiya.service.UserService;
 import com.xy.mianshiya.utils.SqlUtils;
+<<<<<<< HEAD
 
 import java.time.LocalDate;
 import java.time.Year;
 import java.util.*;
 import java.util.stream.Collectors;
 import javax.annotation.Resource;
+=======
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
 import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
 import org.apache.commons.lang3.StringUtils;
+<<<<<<< HEAD
 import org.redisson.api.RBitSet;
 import org.redisson.api.RedissonClient;
+=======
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
@@ -48,9 +61,12 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
      */
     public static final String SALT = "xy";
 
+<<<<<<< HEAD
     @Resource
     private RedissonClient redissonClient;
 
+=======
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
     @Override
     public long userRegister(String userAccount, String userPassword, String checkPassword) {
         // 1. 校验
@@ -278,6 +294,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
                 sortField);
         return queryWrapper;
     }
+<<<<<<< HEAD
     /**
      * 添加用户签到记录
      *
@@ -330,4 +347,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
 
 
+=======
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
 }

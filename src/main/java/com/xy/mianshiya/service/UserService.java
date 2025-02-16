@@ -6,10 +6,14 @@ import com.xy.mianshiya.model.dto.user.UserQueryRequest;
 import com.xy.mianshiya.model.entity.User;
 import com.xy.mianshiya.model.vo.LoginUserVO;
 import com.xy.mianshiya.model.vo.UserVO;
+<<<<<<< HEAD
 
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
+=======
+import java.util.List;
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
 import javax.servlet.http.HttpServletRequest;
 import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
 
@@ -120,6 +124,7 @@ public interface UserService extends IService<User> {
      */
     QueryWrapper<User> getQueryWrapper(UserQueryRequest userQueryRequest);
 
+<<<<<<< HEAD
     /**
      * 添加用户签到记录
      *
@@ -138,4 +143,6 @@ public interface UserService extends IService<User> {
     List<Integer> getUserSignInRecord(long userId, Integer year);
 
 
+=======
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
 }

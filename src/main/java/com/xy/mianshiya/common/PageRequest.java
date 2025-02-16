@@ -30,6 +30,9 @@ public class PageRequest {
      * 排序顺序（默认升序）
      */
     private String sortOrder = CommonConstant.SORT_ORDER_ASC;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
 }
