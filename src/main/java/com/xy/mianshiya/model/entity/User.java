@@ -49,7 +49,11 @@ public class User implements Serializable {
      */
     private String userName;
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
 
     /**
      * 遍及时间
@@ -57,7 +61,12 @@ public class User implements Serializable {
 
     private Date editTime;
 
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
     /**
      * 用户头像
      */

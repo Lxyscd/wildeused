@@ -21,6 +21,7 @@ import com.xy.mianshiya.model.vo.LoginUserVO;
 import com.xy.mianshiya.model.vo.UserVO;
 import com.xy.mianshiya.service.UserService;
 
+<<<<<<< HEAD
 
 import java.time.LocalDate;
 import java.util.List;
@@ -28,6 +29,15 @@ import java.util.Map;
 
 import java.util.List;
 
+=======
+<<<<<<< HEAD
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Map;
+=======
+import java.util.List;
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -322,7 +332,11 @@ public class UserController {
         ThrowUtils.throwIf(!result, ErrorCode.OPERATION_ERROR);
         return ResultUtils.success(true);
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
 
 
 
@@ -356,5 +370,10 @@ public class UserController {
         return ResultUtils.success(userSignInRecord);
     }
 
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
 }

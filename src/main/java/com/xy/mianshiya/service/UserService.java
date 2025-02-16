@@ -6,11 +6,21 @@ import com.xy.mianshiya.model.dto.user.UserQueryRequest;
 import com.xy.mianshiya.model.entity.User;
 import com.xy.mianshiya.model.vo.LoginUserVO;
 import com.xy.mianshiya.model.vo.UserVO;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
 
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
+<<<<<<< HEAD
 import java.util.List;
+=======
+=======
+import java.util.List;
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
 import javax.servlet.http.HttpServletRequest;
 import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
 
@@ -121,6 +131,10 @@ public interface UserService extends IService<User> {
      */
     QueryWrapper<User> getQueryWrapper(UserQueryRequest userQueryRequest);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
     /**
      * 添加用户签到记录
      *
@@ -139,6 +153,11 @@ public interface UserService extends IService<User> {
     List<Integer> getUserSignInRecord(long userId, Integer year);
 
 
+<<<<<<< HEAD
 
 
+=======
+=======
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
 }

@@ -26,7 +26,11 @@ spring:
     password: 123456
   # Redis 配置
   # todo 需替换配置，然后取消注释
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
   redis:
     database: 1
     host: localhost
@@ -39,7 +43,11 @@ spring:
     uris: http://localhost:9200
     username: root
     password: 123456
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
 #  redis:
 #    database: 1
 #    host: localhost
@@ -52,7 +60,11 @@ spring:
 #    uris: http://localhost:9200
 #    username: root
 #    password: 123456
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2247d795a3377690b2ff6ed69a85d11fc8d8d848
+>>>>>>> 376fc09c2ae19f3aeddc1b5d8abe6077b0581562
   # 文件上传
   servlet:
     multipart:
