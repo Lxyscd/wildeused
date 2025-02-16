@@ -21,9 +21,13 @@ import com.xy.mianshiya.model.vo.LoginUserVO;
 import com.xy.mianshiya.model.vo.UserVO;
 import com.xy.mianshiya.service.UserService;
 
+
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
+
+import java.util.List;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -321,6 +325,7 @@ public class UserController {
 
 
 
+
     /**
      * 添加用户签到记录
      *
@@ -350,5 +355,6 @@ public class UserController {
         List<Integer> userSignInRecord = userService.getUserSignInRecord(loginUser.getId(), year);
         return ResultUtils.success(userSignInRecord);
     }
+
 
 }

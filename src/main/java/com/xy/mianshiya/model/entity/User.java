@@ -50,11 +50,13 @@ public class User implements Serializable {
     private String userName;
 
 
+
     /**
      * 遍及时间
      */
 
     private Date editTime;
+
 
     /**
      * 用户头像

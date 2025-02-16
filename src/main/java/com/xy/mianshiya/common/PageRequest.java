@@ -31,5 +31,4 @@ public class PageRequest {
      */
     private String sortOrder = CommonConstant.SORT_ORDER_ASC;
 
-
 }

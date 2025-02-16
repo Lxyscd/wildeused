@@ -10,6 +10,7 @@ import com.xy.mianshiya.model.vo.UserVO;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
+import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
 
@@ -136,6 +137,8 @@ public interface UserService extends IService<User> {
      * @return 签到记录映射
      */
     List<Integer> getUserSignInRecord(long userId, Integer year);
+
+
 
 
 }

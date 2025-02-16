@@ -6,9 +6,13 @@ import cn.hutool.core.collection.CollUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xy.mianshiya.common.ErrorCode;
+
 import com.xy.mianshiya.config.RedissonConfig;
 import com.xy.mianshiya.constant.CommonConstant;
 import com.xy.mianshiya.constant.RedisConstant;
+
+import com.xy.mianshiya.constant.CommonConstant;
+
 import com.xy.mianshiya.exception.BusinessException;
 import com.xy.mianshiya.mapper.UserMapper;
 import com.xy.mianshiya.model.dto.user.UserQueryRequest;
@@ -19,17 +23,25 @@ import com.xy.mianshiya.model.vo.UserVO;
 import com.xy.mianshiya.service.UserService;
 import com.xy.mianshiya.utils.SqlUtils;
 
+
 import java.time.LocalDate;
 import java.time.Year;
 import java.util.*;
 import java.util.stream.Collectors;
 import javax.annotation.Resource;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
 import org.apache.commons.lang3.StringUtils;
+
 import org.redisson.api.RBitSet;
 import org.redisson.api.RedissonClient;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
@@ -48,8 +60,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
      */
     public static final String SALT = "xy";
 
+
     @Resource
     private RedissonClient redissonClient;
+
 
     @Override
     public long userRegister(String userAccount, String userPassword, String checkPassword) {
@@ -278,6 +292,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
                 sortField);
         return queryWrapper;
     }
+
     /**
      * 添加用户签到记录
      *
@@ -327,6 +342,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         }
         return dayList;
     }
+
 
 
 
