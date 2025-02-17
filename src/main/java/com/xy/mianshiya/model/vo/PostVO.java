@@ -1,6 +1,7 @@
 package com.xy.mianshiya.model.vo;
 
 import cn.hutool.json.JSONUtil;
+import com.alibaba.druid.support.json.JSONUtils;
 import com.xy.mianshiya.model.entity.Post;
 import java.io.Serializable;
 import java.util.Date;
@@ -105,7 +106,7 @@ public class PostVO implements Serializable {
         }
         PostVO postVO = new PostVO();
         BeanUtils.copyProperties(post, postVO);
-        postVO.setTagList(JSONUtil.toList(post.getTags(), String.class));
+        postVO.setTagList(JSONUtil.toList(JSONUtil.parseArray(post.getTags()), String.class));
         return postVO;
     }
 }
