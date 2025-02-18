@@ -109,6 +109,15 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
+        <!--https://sentinelguard.io/zh-cn/docs/quick-start.html-->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-sentinel -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <version>2021.0.5.0</version>
+        </dependency>
+
+
         <!-- https://github.com/alibaba/easyexcel -->
         <dependency>
             <groupId>com.alibaba</groupId>
